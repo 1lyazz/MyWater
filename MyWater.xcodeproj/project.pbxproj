@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A22CE812C516C720060FAA8 /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE802C516C720060FAA8 /* DailyGoalView.swift */; };
+		0A22CE8A2C52CDEA0060FAA8 /* GlassSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE892C52CDEA0060FAA8 /* GlassSizeView.swift */; };
+		0A22CE8E2C52D50E0060FAA8 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE8D2C52D50E0060FAA8 /* OptionsView.swift */; };
+		0A22CE902C52D9E50060FAA8 /* SettingsWavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE8F2C52D9E50060FAA8 /* SettingsWavesView.swift */; };
+		0A22CE922C52DEA90060FAA8 /* VideoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE912C52DEA90060FAA8 /* VideoCollection.swift */; };
+		0A22CE972C52E3880060FAA8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE962C52E3880060FAA8 /* SettingsView.swift */; };
+		0A22CE9A2C52EDBD0060FAA8 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE992C52EDBD0060FAA8 /* SettingsModel.swift */; };
+		0A22CE9F2C52FC240060FAA8 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CE9E2C52FC240060FAA8 /* NotificationManager.swift */; };
+		0A22CEA12C52FCB50060FAA8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22CEA02C52FCB50060FAA8 /* FirebaseManager.swift */; };
+		0A3E5E752C3C0AF9004E5BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5E742C3C0AF9004E5BBA /* AppDelegate.swift */; };
+		0A3E5E772C3C0AF9004E5BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5E762C3C0AF9004E5BBA /* SceneDelegate.swift */; };
+		0A3E5E792C3C0AF9004E5BBA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5E782C3C0AF9004E5BBA /* SignInVC.swift */; };
+		0A3E5E7E2C3C0AFB004E5BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E5E7D2C3C0AFB004E5BBA /* Assets.xcassets */; };
+		0A52BED32C41620200874CAC /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A52BED22C41620200874CAC /* VideoCell.swift */; };
+		0A5C8AA12C402EB700CE5CDB /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 0A5C8AA02C402EB700CE5CDB /* RxGesture */; };
+		0A5C8AA42C402F3500CE5CDB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0A5C8AA32C402F3500CE5CDB /* RxCocoa */; };
+		0A5C8AA62C402F3500CE5CDB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A5C8AA52C402F3500CE5CDB /* RxSwift */; };
+		0A5C8AA92C40302C00CE5CDB /* CustomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AA82C40302C00CE5CDB /* CustomItemView.swift */; };
+		0A5C8AAB2C40307C00CE5CDB /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAA2C40307C00CE5CDB /* CustomTabItem.swift */; };
+		0A5C8AAD2C40309D00CE5CDB /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAC2C40309D00CE5CDB /* CustomTabBar.swift */; };
+		0A5C8AAF2C4030B500CE5CDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAE2C4030B500CE5CDB /* Extensions.swift */; };
+		0A7C7C852C46B2ED00534556 /* DropProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C7C842C46B2ED00534556 /* DropProgressView.swift */; };
+		0A7C7C872C46E05800534556 /* WaterBarShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C7C862C46E05800534556 /* WaterBarShapeView.swift */; };
+		0A7F7B562C568BAB0043B205 /* MyWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F7B552C568BAB0043B205 /* MyWaterView.swift */; };
+		0A7F7B582C568FEF0043B205 /* MyWaterBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F7B572C568FEF0043B205 /* MyWaterBackground.swift */; };
+		0A7F7B5A2C5692D40043B205 /* WaterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F7B592C5692D40043B205 /* WaterBar.swift */; };
+		0A7F7B632C56A8870043B205 /* MyWaterFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F7B622C56A8870043B205 /* MyWaterFirestore.swift */; };
+		0AABD0752C3E8F5F0094E4B8 /* MyWaterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABD0742C3E8F5F0094E4B8 /* MyWaterVC.swift */; };
+		0ABC0E8B2C4328DD00DA0AE9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABC0E8A2C4328DD00DA0AE9 /* Toast */; };
+		0AE1F2D72C50168700219EDE /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 0AE1F2D62C50168700219EDE /* FSCalendar */; };
+		0AE1F2DC2C5029CE00219EDE /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1F2DB2C5029CE00219EDE /* CircularProgressView.swift */; };
+		0AE1F2DE2C502B1900219EDE /* FSCalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE1F2DD2C502B1900219EDE /* FSCalendarExtension.swift */; };
+		0AE42FCC2C401E670070CC14 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE42FCB2C401E670070CC14 /* TabBarController.swift */; };
+		0AE42FCE2C401EF00070CC14 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE42FCD2C401EF00070CC14 /* CalendarVC.swift */; };
+		0AE42FD02C401F3C0070CC14 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE42FCF2C401F3C0070CC14 /* SettingsVC.swift */; };
+		0AE5FAC02C579580009BE94C /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FABF2C579580009BE94C /* CalendarView.swift */; };
+		0AE5FAC22C579611009BE94C /* GoalStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAC12C579611009BE94C /* GoalStatistic.swift */; };
+		0AE5FAC72C57B818009BE94C /* CalendarFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAC62C57B818009BE94C /* CalendarFirestore.swift */; };
+		0AE5FACB2C57B9F8009BE94C /* SignInBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FACA2C57B9F8009BE94C /* SignInBackground.swift */; };
+		0AE5FACD2C57BDFD009BE94C /* SignInFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FACC2C57BDFD009BE94C /* SignInFields.swift */; };
+		0AE5FACF2C57BFE2009BE94C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FACE2C57BFE2009BE94C /* SignInView.swift */; };
+		0AE5FAD22C57D6AC009BE94C /* SignUpFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAD12C57D6AC009BE94C /* SignUpFields.swift */; };
+		0AE5FAD42C57D94B009BE94C /* SignUpBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAD32C57D94B009BE94C /* SignUpBackground.swift */; };
+		0AE5FAD62C57DB3F009BE94C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAD52C57DB3F009BE94C /* SignUpView.swift */; };
+		0AE5FAD92C57E589009BE94C /* ResetFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FAD82C57E589009BE94C /* ResetFields.swift */; };
+		0AE5FADB2C57E665009BE94C /* ResetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FADA2C57E665009BE94C /* ResetBackground.swift */; };
+		0AE5FADD2C57E74B009BE94C /* ForgotPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5FADC2C57E74B009BE94C /* ForgotPassView.swift */; };
+		0AE66E762C3D0A1C00F2A954 /* WaterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E752C3D0A1C00F2A954 /* WaterTextField.swift */; };
+		0AE66E792C3D303C00F2A954 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E782C3D303C00F2A954 /* UILabelExtension.swift */; };
+		0AE66E7B2C3D31F300F2A954 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E7A2C3D31F300F2A954 /* UIButtonExtension.swift */; };
+		0AE66E7D2C3D467B00F2A954 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E7C2C3D467B00F2A954 /* SignUpVC.swift */; };
+		0AE66E7F2C3D46AB00F2A954 /* ForgotPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E7E2C3D46AB00F2A954 /* ForgotPassVC.swift */; };
+		0AE66E852C3D59B100F2A954 /* UIVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */; };
+		0AE88B192C4280AC0070DF5D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */; };
+		0AE88B1E2C42CF580070DF5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B1D2C42CF580070DF5D /* Constants.swift */; };
+		0AFE9AB02C3C0ED700AC24E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE9AAF2C3C0ED700AC24E6 /* GoogleService-Info.plist */; };
+		0AFE9AB32C3C143700AC24E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB22C3C143700AC24E6 /* FirebaseAuth */; };
+		0AFE9AB52C3C143700AC24E6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB42C3C143700AC24E6 /* FirebaseFirestore */; };
+		0AFE9ABB2C3C1BB700AC24E6 /* GlassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */; };
+		0AFE9ABE2C3C1D9700AC24E6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9ABD2C3C1D9700AC24E6 /* SnapKit */; settings = {ATTRIBUTES = (Required, ); }; };
+		0AFE9AC52C3C432C00AC24E6 /* WaveImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */; };
+		0AFE9AC82C3C43B300AC24E6 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AE4ACAB2C43E6C400FA9C10 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A22CE802C516C720060FAA8 /* DailyGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalView.swift; sourceTree = "<group>"; };
+		0A22CE892C52CDEA0060FAA8 /* GlassSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassSizeView.swift; sourceTree = "<group>"; };
+		0A22CE8D2C52D50E0060FAA8 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		0A22CE8F2C52D9E50060FAA8 /* SettingsWavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWavesView.swift; sourceTree = "<group>"; };
+		0A22CE912C52DEA90060FAA8 /* VideoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollection.swift; sourceTree = "<group>"; };
+		0A22CE962C52E3880060FAA8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0A22CE992C52EDBD0060FAA8 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		0A22CE9E2C52FC240060FAA8 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		0A22CEA02C52FCB50060FAA8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		0A3E5E712C3C0AF9004E5BBA /* MyWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3E5E742C3C0AF9004E5BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A3E5E762C3C0AF9004E5BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A3E5E782C3C0AF9004E5BBA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		0A3E5E7D2C3C0AFB004E5BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A3E5E822C3C0AFB004E5BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A52BED22C41620200874CAC /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		0A5C8AA82C40302C00CE5CDB /* CustomItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemView.swift; sourceTree = "<group>"; };
+		0A5C8AAA2C40307C00CE5CDB /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
+		0A5C8AAC2C40309D00CE5CDB /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0A5C8AAE2C4030B500CE5CDB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0A7C7C842C46B2ED00534556 /* DropProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropProgressView.swift; sourceTree = "<group>"; };
+		0A7C7C862C46E05800534556 /* WaterBarShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBarShapeView.swift; sourceTree = "<group>"; };
+		0A7F7B552C568BAB0043B205 /* MyWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaterView.swift; sourceTree = "<group>"; };
+		0A7F7B572C568FEF0043B205 /* MyWaterBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaterBackground.swift; sourceTree = "<group>"; };
+		0A7F7B592C5692D40043B205 /* WaterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBar.swift; sourceTree = "<group>"; };
+		0A7F7B622C56A8870043B205 /* MyWaterFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaterFirestore.swift; sourceTree = "<group>"; };
+		0AABD0742C3E8F5F0094E4B8 /* MyWaterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaterVC.swift; sourceTree = "<group>"; };
+		0AE1F2DB2C5029CE00219EDE /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		0AE1F2DD2C502B1900219EDE /* FSCalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarExtension.swift; sourceTree = "<group>"; };
+		0AE42FCB2C401E670070CC14 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0AE42FCD2C401EF00070CC14 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		0AE42FCF2C401F3C0070CC14 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		0AE4AC962C43E6C200FA9C10 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0AE4AC982C43E6C200FA9C10 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0AE5FABF2C579580009BE94C /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		0AE5FAC12C579611009BE94C /* GoalStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalStatistic.swift; sourceTree = "<group>"; };
+		0AE5FAC62C57B818009BE94C /* CalendarFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFirestore.swift; sourceTree = "<group>"; };
+		0AE5FACA2C57B9F8009BE94C /* SignInBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBackground.swift; sourceTree = "<group>"; };
+		0AE5FACC2C57BDFD009BE94C /* SignInFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFields.swift; sourceTree = "<group>"; };
+		0AE5FACE2C57BFE2009BE94C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0AE5FAD12C57D6AC009BE94C /* SignUpFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFields.swift; sourceTree = "<group>"; };
+		0AE5FAD32C57D94B009BE94C /* SignUpBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBackground.swift; sourceTree = "<group>"; };
+		0AE5FAD52C57DB3F009BE94C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0AE5FAD82C57E589009BE94C /* ResetFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFields.swift; sourceTree = "<group>"; };
+		0AE5FADA2C57E665009BE94C /* ResetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetBackground.swift; sourceTree = "<group>"; };
+		0AE5FADC2C57E74B009BE94C /* ForgotPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassView.swift; sourceTree = "<group>"; };
+		0AE66E752C3D0A1C00F2A954 /* WaterTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTextField.swift; sourceTree = "<group>"; };
+		0AE66E782C3D303C00F2A954 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		0AE66E7A2C3D31F300F2A954 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		0AE66E7C2C3D467B00F2A954 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		0AE66E7E2C3D46AB00F2A954 /* ForgotPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassVC.swift; sourceTree = "<group>"; };
+		0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExtension.swift; sourceTree = "<group>"; };
+		0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0AE88B1D2C42CF580070DF5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AFE9AAF2C3C0ED700AC24E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassManager.swift; sourceTree = "<group>"; };
+		0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveImageView.swift; sourceTree = "<group>"; };
+		0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A3E5E6E2C3C0AF9004E5BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5C8AA62C402F3500CE5CDB /* RxSwift in Frameworks */,
+				0AFE9ABE2C3C1D9700AC24E6 /* SnapKit in Frameworks */,
+				0AFE9AB32C3C143700AC24E6 /* FirebaseAuth in Frameworks */,
+				0A5C8AA42C402F3500CE5CDB /* RxCocoa in Frameworks */,
+				0A5C8AA12C402EB700CE5CDB /* RxGesture in Frameworks */,
+				0AE1F2D72C50168700219EDE /* FSCalendar in Frameworks */,
+				0ABC0E8B2C4328DD00DA0AE9 /* Toast in Frameworks */,
+				0AFE9AB52C3C143700AC24E6 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A22CE822C529AFA0060FAA8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0A22CE962C52E3880060FAA8 /* SettingsView.swift */,
+				0A22CE8F2C52D9E50060FAA8 /* SettingsWavesView.swift */,
+				0A22CE932C52E28C0060FAA8 /* VideoCollection */,
+				0A22CE802C516C720060FAA8 /* DailyGoalView.swift */,
+				0A22CE892C52CDEA0060FAA8 /* GlassSizeView.swift */,
+				0A22CE8D2C52D50E0060FAA8 /* OptionsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0A22CE932C52E28C0060FAA8 /* VideoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0ABF27AC2C414C9900309982 /* Cells */,
+				0A22CE912C52DEA90060FAA8 /* VideoCollection.swift */,
+			);
+			path = VideoCollection;
+			sourceTree = "<group>";
+		};
+		0A22CE9D2C52FBE40060FAA8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0AE42FCF2C401F3C0070CC14 /* SettingsVC.swift */,
+				0A22CEA02C52FCB50060FAA8 /* FirebaseManager.swift */,
+				0A22CE9E2C52FC240060FAA8 /* NotificationManager.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0A22CEA22C5307DA0060FAA8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FABF2C579580009BE94C /* CalendarView.swift */,
+				0AE5FAC12C579611009BE94C /* GoalStatistic.swift */,
+				0AE1F2DB2C5029CE00219EDE /* CircularProgressView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0A22CEA32C5307EF0060FAA8 /* MyWater */ = {
+			isa = PBXGroup;
+			children = (
+				0A7F7B552C568BAB0043B205 /* MyWaterView.swift */,
+				0A7F7B572C568FEF0043B205 /* MyWaterBackground.swift */,
+				0A7F7B592C5692D40043B205 /* WaterBar.swift */,
+				0A7C7C862C46E05800534556 /* WaterBarShapeView.swift */,
+				0A7C7C842C46B2ED00534556 /* DropProgressView.swift */,
+			);
+			path = MyWater;
+			sourceTree = "<group>";
+		};
+		0A3E5E682C3C0AF9004E5BBA = {
+			isa = PBXGroup;
+			children = (
+				0A3E5E732C3C0AF9004E5BBA /* MyWater */,
+				0AE4AC952C43E6C200FA9C10 /* Frameworks */,
+				0A3E5E722C3C0AF9004E5BBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A3E5E722C3C0AF9004E5BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A3E5E712C3C0AF9004E5BBA /* MyWater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A3E5E732C3C0AF9004E5BBA /* MyWater */ = {
+			isa = PBXGroup;
+			children = (
+				0A3E5E742C3C0AF9004E5BBA /* AppDelegate.swift */,
+				0A3E5E762C3C0AF9004E5BBA /* SceneDelegate.swift */,
+				0AFE9AAD2C3C0D7900AC24E6 /* Model */,
+				0AFE9AAB2C3C0D5300AC24E6 /* View */,
+				0AFE9AAC2C3C0D6A00AC24E6 /* Controller */,
+				0A5C8AA72C402FEB00CE5CDB /* CustomTabBar */,
+				0AFE9AAE2C3C0D8A00AC24E6 /* Resources */,
+				0AFE9AC62C3C438E00AC24E6 /* Helpers */,
+				0A3E5E822C3C0AFB004E5BBA /* Info.plist */,
+				0AFE9AAF2C3C0ED700AC24E6 /* GoogleService-Info.plist */,
+			);
+			path = MyWater;
+			sourceTree = "<group>";
+		};
+		0A5C8AA72C402FEB00CE5CDB /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0AE42FCB2C401E670070CC14 /* TabBarController.swift */,
+				0A5C8AAC2C40309D00CE5CDB /* CustomTabBar.swift */,
+				0A5C8AAA2C40307C00CE5CDB /* CustomTabItem.swift */,
+				0A5C8AA82C40302C00CE5CDB /* CustomItemView.swift */,
+				0A5C8AAE2C4030B500CE5CDB /* Extensions.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		0A7F7B642C56A8AA0043B205 /* MyWater */ = {
+			isa = PBXGroup;
+			children = (
+				0AABD0742C3E8F5F0094E4B8 /* MyWaterVC.swift */,
+				0A7F7B622C56A8870043B205 /* MyWaterFirestore.swift */,
+			);
+			path = MyWater;
+			sourceTree = "<group>";
+		};
+		0ABF27AC2C414C9900309982 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0A52BED22C41620200874CAC /* VideoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0AE42FCA2C401CF90070CC14 /* Authorisation */ = {
+			isa = PBXGroup;
+			children = (
+				0A3E5E782C3C0AF9004E5BBA /* SignInVC.swift */,
+				0AE66E7C2C3D467B00F2A954 /* SignUpVC.swift */,
+				0AE66E7E2C3D46AB00F2A954 /* ForgotPassVC.swift */,
+			);
+			path = Authorisation;
+			sourceTree = "<group>";
+		};
+		0AE4AC952C43E6C200FA9C10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4AC962C43E6C200FA9C10 /* WidgetKit.framework */,
+				0AE4AC982C43E6C200FA9C10 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AE5FAC52C57B7E7009BE94C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0AE42FCD2C401EF00070CC14 /* CalendarVC.swift */,
+				0AE5FAC62C57B818009BE94C /* CalendarFirestore.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0AE5FAC82C57B901009BE94C /* Authorisation */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FAC92C57B913009BE94C /* SignIn */,
+				0AE5FAD02C57D36B009BE94C /* SignUp */,
+				0AE5FAD72C57E38C009BE94C /* ForgotPass */,
+			);
+			path = Authorisation;
+			sourceTree = "<group>";
+		};
+		0AE5FAC92C57B913009BE94C /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FACE2C57BFE2009BE94C /* SignInView.swift */,
+				0AE5FACA2C57B9F8009BE94C /* SignInBackground.swift */,
+				0AE5FACC2C57BDFD009BE94C /* SignInFields.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		0AE5FAD02C57D36B009BE94C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FAD52C57DB3F009BE94C /* SignUpView.swift */,
+				0AE5FAD32C57D94B009BE94C /* SignUpBackground.swift */,
+				0AE5FAD12C57D6AC009BE94C /* SignUpFields.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0AE5FAD72C57E38C009BE94C /* ForgotPass */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FADC2C57E74B009BE94C /* ForgotPassView.swift */,
+				0AE5FADA2C57E665009BE94C /* ResetBackground.swift */,
+				0AE5FAD82C57E589009BE94C /* ResetFields.swift */,
+			);
+			path = ForgotPass;
+			sourceTree = "<group>";
+		};
+		0AE66E772C3D302800F2A954 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */,
+				0AE66E782C3D303C00F2A954 /* UILabelExtension.swift */,
+				0AE66E7A2C3D31F300F2A954 /* UIButtonExtension.swift */,
+				0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */,
+				0AE1F2DD2C502B1900219EDE /* FSCalendarExtension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		0AE88B1A2C42CEF90070DF5D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0AE88B1D2C42CF580070DF5D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0AFE9AAB2C3C0D5300AC24E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AE5FAC82C57B901009BE94C /* Authorisation */,
+				0A22CEA22C5307DA0060FAA8 /* Calendar */,
+				0A22CEA32C5307EF0060FAA8 /* MyWater */,
+				0A22CE822C529AFA0060FAA8 /* Settings */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AFE9AAC2C3C0D6A00AC24E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AE42FCA2C401CF90070CC14 /* Authorisation */,
+				0AE5FAC52C57B7E7009BE94C /* Calendar */,
+				0A7F7B642C56A8AA0043B205 /* MyWater */,
+				0A22CE9D2C52FBE40060FAA8 /* Settings */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AFE9AAD2C3C0D7900AC24E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A22CE992C52EDBD0060FAA8 /* SettingsModel.swift */,
+				0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0AFE9AAE2C3C0D8A00AC24E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A3E5E7D2C3C0AFB004E5BBA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AFE9AC62C3C438E00AC24E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AE88B1A2C42CEF90070DF5D /* Constants */,
+				0AE66E772C3D302800F2A954 /* Extentions */,
+				0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */,
+				0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */,
+				0AE66E752C3D0A1C00F2A954 /* WaterTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A3E5E702C3C0AF9004E5BBA /* MyWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3E5E9B2C3C0AFB004E5BBA /* Build configuration list for PBXNativeTarget "MyWater" */;
+			buildPhases = (
+				0A3E5E6D2C3C0AF9004E5BBA /* Sources */,
+				0A3E5E6E2C3C0AF9004E5BBA /* Frameworks */,
+				0A3E5E6F2C3C0AF9004E5BBA /* Resources */,
+				0AE4ACAB2C43E6C400FA9C10 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWater;
+			packageProductDependencies = (
+				0AFE9AB22C3C143700AC24E6 /* FirebaseAuth */,
+				0AFE9AB42C3C143700AC24E6 /* FirebaseFirestore */,
+				0AFE9ABD2C3C1D9700AC24E6 /* SnapKit */,
+				0A5C8AA02C402EB700CE5CDB /* RxGesture */,
+				0A5C8AA32C402F3500CE5CDB /* RxCocoa */,
+				0A5C8AA52C402F3500CE5CDB /* RxSwift */,
+				0ABC0E8A2C4328DD00DA0AE9 /* Toast */,
+				0AE1F2D62C50168700219EDE /* FSCalendar */,
+			);
+			productName = MyWater;
+			productReference = 0A3E5E712C3C0AF9004E5BBA /* MyWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A3E5E692C3C0AF9004E5BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0A3E5E702C3C0AF9004E5BBA = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 0A3E5E6C2C3C0AF9004E5BBA /* Build configuration list for PBXProject "MyWater" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A3E5E682C3C0AF9004E5BBA;
+			packageReferences = (
+				0AFE9AB12C3C143700AC24E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0AFE9ABC2C3C1D9700AC24E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0A5C8A9F2C402EB700CE5CDB /* XCRemoteSwiftPackageReference "RxGesture" */,
+				0A5C8AA22C402F3500CE5CDB /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0ABC0E892C4328DD00DA0AE9 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				0AE1F2D52C50168700219EDE /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
+			productRefGroup = 0A3E5E722C3C0AF9004E5BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A3E5E702C3C0AF9004E5BBA /* MyWater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A3E5E6F2C3C0AF9004E5BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3E5E7E2C3C0AFB004E5BBA /* Assets.xcassets in Resources */,
+				0AFE9AB02C3C0ED700AC24E6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A3E5E6D2C3C0AF9004E5BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE66E762C3D0A1C00F2A954 /* WaterTextField.swift in Sources */,
+				0AE66E7F2C3D46AB00F2A954 /* ForgotPassVC.swift in Sources */,
+				0A22CE9A2C52EDBD0060FAA8 /* SettingsModel.swift in Sources */,
+				0AE88B192C4280AC0070DF5D /* UIViewExtension.swift in Sources */,
+				0AE5FAD92C57E589009BE94C /* ResetFields.swift in Sources */,
+				0A22CE8E2C52D50E0060FAA8 /* OptionsView.swift in Sources */,
+				0A22CE8A2C52CDEA0060FAA8 /* GlassSizeView.swift in Sources */,
+				0A5C8AAD2C40309D00CE5CDB /* CustomTabBar.swift in Sources */,
+				0AFE9AC82C3C43B300AC24E6 /* ConstraintsHelper.swift in Sources */,
+				0A3E5E792C3C0AF9004E5BBA /* SignInVC.swift in Sources */,
+				0AE88B1E2C42CF580070DF5D /* Constants.swift in Sources */,
+				0AE5FAD62C57DB3F009BE94C /* SignUpView.swift in Sources */,
+				0AABD0752C3E8F5F0094E4B8 /* MyWaterVC.swift in Sources */,
+				0AE5FAC02C579580009BE94C /* CalendarView.swift in Sources */,
+				0AE42FD02C401F3C0070CC14 /* SettingsVC.swift in Sources */,
+				0A22CEA12C52FCB50060FAA8 /* FirebaseManager.swift in Sources */,
+				0A52BED32C41620200874CAC /* VideoCell.swift in Sources */,
+				0A7F7B5A2C5692D40043B205 /* WaterBar.swift in Sources */,
+				0AE42FCE2C401EF00070CC14 /* CalendarVC.swift in Sources */,
+				0AE5FACB2C57B9F8009BE94C /* SignInBackground.swift in Sources */,
+				0AFE9AC52C3C432C00AC24E6 /* WaveImageView.swift in Sources */,
+				0AE66E792C3D303C00F2A954 /* UILabelExtension.swift in Sources */,
+				0AE5FADD2C57E74B009BE94C /* ForgotPassView.swift in Sources */,
+				0A5C8AA92C40302C00CE5CDB /* CustomItemView.swift in Sources */,
+				0A7C7C852C46B2ED00534556 /* DropProgressView.swift in Sources */,
+				0AE5FAC22C579611009BE94C /* GoalStatistic.swift in Sources */,
+				0AE5FADB2C57E665009BE94C /* ResetBackground.swift in Sources */,
+				0AE5FAD42C57D94B009BE94C /* SignUpBackground.swift in Sources */,
+				0AE5FAC72C57B818009BE94C /* CalendarFirestore.swift in Sources */,
+				0A22CE812C516C720060FAA8 /* DailyGoalView.swift in Sources */,
+				0A7F7B632C56A8870043B205 /* MyWaterFirestore.swift in Sources */,
+				0AE66E7B2C3D31F300F2A954 /* UIButtonExtension.swift in Sources */,
+				0A22CE922C52DEA90060FAA8 /* VideoCollection.swift in Sources */,
+				0AE5FAD22C57D6AC009BE94C /* SignUpFields.swift in Sources */,
+				0A3E5E752C3C0AF9004E5BBA /* AppDelegate.swift in Sources */,
+				0A22CE972C52E3880060FAA8 /* SettingsView.swift in Sources */,
+				0AFE9ABB2C3C1BB700AC24E6 /* GlassManager.swift in Sources */,
+				0AE1F2DE2C502B1900219EDE /* FSCalendarExtension.swift in Sources */,
+				0A5C8AAB2C40307C00CE5CDB /* CustomTabItem.swift in Sources */,
+				0A7C7C872C46E05800534556 /* WaterBarShapeView.swift in Sources */,
+				0AE5FACD2C57BDFD009BE94C /* SignInFields.swift in Sources */,
+				0A7F7B562C568BAB0043B205 /* MyWaterView.swift in Sources */,
+				0A5C8AAF2C4030B500CE5CDB /* Extensions.swift in Sources */,
+				0AE66E7D2C3D467B00F2A954 /* SignUpVC.swift in Sources */,
+				0AE5FACF2C57BFE2009BE94C /* SignInView.swift in Sources */,
+				0A7F7B582C568FEF0043B205 /* MyWaterBackground.swift in Sources */,
+				0AE42FCC2C401E670070CC14 /* TabBarController.swift in Sources */,
+				0AE66E852C3D59B100F2A954 /* UIVCExtension.swift in Sources */,
+				0AE1F2DC2C5029CE00219EDE /* CircularProgressView.swift in Sources */,
+				0A22CE9F2C52FC240060FAA8 /* NotificationManager.swift in Sources */,
+				0A22CE902C52D9E50060FAA8 /* SettingsWavesView.swift in Sources */,
+				0A3E5E772C3C0AF9004E5BBA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A3E5E992C3C0AFB004E5BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A3E5E9A2C3C0AFB004E5BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A3E5E9C2C3C0AFB004E5BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2D298QL4HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWater/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWater;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski.MyWater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A3E5E9D2C3C0AFB004E5BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2D298QL4HC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWater/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWater;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski.MyWater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A3E5E6C2C3C0AF9004E5BBA /* Build configuration list for PBXProject "MyWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3E5E992C3C0AFB004E5BBA /* Debug */,
+				0A3E5E9A2C3C0AFB004E5BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3E5E9B2C3C0AFB004E5BBA /* Build configuration list for PBXNativeTarget "MyWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3E5E9C2C3C0AFB004E5BBA /* Debug */,
+				0A3E5E9D2C3C0AFB004E5BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A5C8A9F2C402EB700CE5CDB /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.4;
+			};
+		};
+		0A5C8AA22C402F3500CE5CDB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		0ABC0E892C4328DD00DA0AE9 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		0AE1F2D52C50168700219EDE /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		0AFE9AB12C3C143700AC24E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+		0AFE9ABC2C3C1D9700AC24E6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A5C8AA02C402EB700CE5CDB /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5C8A9F2C402EB700CE5CDB /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+		0A5C8AA32C402F3500CE5CDB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5C8AA22C402F3500CE5CDB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0A5C8AA52C402F3500CE5CDB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5C8AA22C402F3500CE5CDB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		0ABC0E8A2C4328DD00DA0AE9 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ABC0E892C4328DD00DA0AE9 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		0AE1F2D62C50168700219EDE /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AE1F2D52C50168700219EDE /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		0AFE9AB22C3C143700AC24E6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AFE9AB12C3C143700AC24E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0AFE9AB42C3C143700AC24E6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AFE9AB12C3C143700AC24E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0AFE9ABD2C3C1D9700AC24E6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AFE9ABC2C3C1D9700AC24E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A3E5E692C3C0AF9004E5BBA /* Project object */;
+}
