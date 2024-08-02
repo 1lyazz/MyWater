@@ -72,4 +72,5 @@ To run this project on your local machine, follow these steps:
   <img src="Screenshots/MyWaterSCR1.png" width="280" />
   <img src="Screenshots/SettingsSCR1.png" width="280" />
   <img src="Screenshots/SettingsSCR2.png" width="280" />
+  <img src="Screenshots/DailyReminder.png" width="280" />
 </p>
