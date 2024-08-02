@@ -19,7 +19,7 @@ MyWater is your ultimate companion for tracking daily water intake. Set personal
 
 <div align="center">
   <a href="https://youtu.be/XWWipomukE4">
-    <br> <img src=Screenshots/MyWaterYT.jpg" alt="App Demo" width="600" />
+    <br> <img src="Screenshots/MyWaterYT.png" alt="App Demo" width="600" />
   </a>
   
   [YouTube link to App Demo](https://youtu.be/XWWipomukE4)
