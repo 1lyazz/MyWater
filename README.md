@@ -5,7 +5,7 @@
   [![Language](https://img.shields.io/badge/Language-Swift-fa7343.svg?style=flat)](https://developer.apple.com/swift/)
   [![Xcode](https://img.shields.io/badge/Xcode-16-1575f9.svg?style=flat)](https://developer.apple.com/xcode/)
   [![Platform](https://img.shields.io/badge/Platform-iOS%2015%2B-blue.svg?style=flat)](https://www.apple.com/by/ios/ios-15/)<br>
-  [![Platform](https://img.shields.io/badge/Category-Health%2B-darkGreen.svg?style=flat)](https://apps.apple.com/us/charts/iphone/health-fitness-apps/6013)
+  [![Platform](https://img.shields.io/badge/Category-Health%2B-BD00FF.svg?style=flat)](https://apps.apple.com/us/charts/iphone/health-fitness-apps/6013)
   [![License](https://img.shields.io/badge/License-Apache%202.0-800080.svg)](https://www.apache.org/licenses/LICENSE-2.0) <br>
 </div>
 
@@ -62,6 +62,8 @@ To run this project on your local machine, follow these steps:
      - Secure rules: Start in test mode.
 
 ## Screenshots <br>
+
+[Figma Link](https://www.figma.com/design/slhc2dB8nQ1X5xrxAsH9ll/My-Water?m=auto&t=yZXKrerwixY9cKaX-6)
 
 <p align="center">
   <img src="Screenshots/SignUpSCR.png" width="280" />
