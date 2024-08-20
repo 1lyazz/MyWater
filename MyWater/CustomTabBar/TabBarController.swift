@@ -53,6 +53,8 @@ final class TabBarController: UITabBarController {
         selectedIndex = 0
         let controllers = CustomTabItem.allCases.map { $0.viewController }
         setViewControllers(controllers, animated: true)
+        
+        setupTabBarAppearance()
     }
     
     // MARK: Bindings
@@ -67,5 +69,17 @@ final class TabBarController: UITabBarController {
     
     private func selectTabWith(index: Int) {
         selectedIndex = index
+    }
+    
+    private func setupTabBarAppearance() {
+        guard #available(iOS 13.0, *) else { return }
+        
+        let appearance = UITabBarAppearance()
+        appearance.configureWithTransparentBackground()
+        tabBar.standardAppearance = appearance
+        
+        if #available(iOS 15.0, *) {
+            tabBar.scrollEdgeAppearance = appearance
+        }
     }
 }
