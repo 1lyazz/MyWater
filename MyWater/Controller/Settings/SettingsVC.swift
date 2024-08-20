@@ -22,7 +22,7 @@ final class SettingsVC: UIViewController {
         makeConstraints()
         bind()
         loadData()
-        createNotification()
+        scheduleDailyNotification()
     }
     
     override func viewWillAppear(_ animated: Bool) {
