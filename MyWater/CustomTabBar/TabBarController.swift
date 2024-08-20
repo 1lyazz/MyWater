@@ -7,8 +7,13 @@ import SnapKit
 import UIKit
 
 final class TabBarController: UITabBarController {
+    private lazy var customTabBar: CustomTabBar = {
+        let tabBar = CustomTabBar()
+        tabBar.translatesAutoresizingMaskIntoConstraints = false
+        tabBar.addShadow()
+        return tabBar
+    }()
     
-    private let customTabBar = CustomTabBar()
     private let disposeBag = DisposeBag()
 
     // MARK: - Lifecycle
@@ -46,14 +51,9 @@ final class TabBarController: UITabBarController {
     
     private func setupProperties() {
         tabBar.isHidden = true
-        
-        customTabBar.translatesAutoresizingMaskIntoConstraints = false
-        customTabBar.addShadow()
-        
         selectedIndex = 0
         let controllers = CustomTabItem.allCases.map { $0.viewController }
         setViewControllers(controllers, animated: true)
-        
         setupTabBarAppearance()
     }
     
