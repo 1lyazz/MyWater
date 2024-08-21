@@ -36,7 +36,11 @@ extension SettingsVC {
     private func authorizeNotifications() {
         notiCenter.requestAuthorization(options: [.alert, .sound]) { [weak self] granted, _ in
             guard let self = self else { return }
-            if !granted {
+            if granted {
+                DispatchQueue.main.async {
+                    self.scheduleDailyNotification()
+                }
+            } else {
                 DispatchQueue.main.async {
                     self.showNotificationDeniedAlert()
                 }
@@ -69,8 +73,11 @@ extension SettingsVC {
         })
     }
     
-//     Creates a notification with a daily reminder
-    func createNotification() {
+    // Schedules a daily notification at 8 AM
+    func scheduleDailyNotification() {
+        // Remove all pending notifications
+        notiCenter.removeAllPendingNotificationRequests()
+        
         let content = UNMutableNotificationContent()
         content.title = "Daily Reminder"
         content.body = "Don't forget to log your consumption and complete your daily goal!"
@@ -78,28 +85,18 @@ extension SettingsVC {
         var dateComponents = DateComponents()
         dateComponents.calendar = Calendar.current
         dateComponents.hour = 8
-//        dateComponents.minute = 35
+        dateComponents.minute = 20
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
             
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "dailyReminder", content: content, trigger: trigger)
             
-        notiCenter.add(request, withCompletionHandler: nil)
+        notiCenter.add(request) { error in
+            if let error = error {
+                print("Error adding notification: \(error.localizedDescription)")
+            }
+        }
     }
-
-//    // Test Notification
-//    func createNotification() {
-//        let content = UNMutableNotificationContent()
-//        content.title = "Daily Reminder"
-//        content.body = "Don't forget to log your consumption and complete your daily goal!"
-//
-//        // Trigger the notification every 60 seconds
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
-//
-//        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-//
-//        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-//    }
 
     // Shows an alert if notifications are not allowed
     private func showNotificationDeniedAlert() {
