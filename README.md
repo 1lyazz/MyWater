@@ -37,13 +37,14 @@ MyWater is your ultimate companion for tracking daily water intake. Set personal
 1. Programming Language: [Swift](https://developer.apple.com/swift/) ([UIKit](https://developer.apple.com/documentation/uikit))
 2. Authentication Solution: [FirebaseAuth](https://firebase.google.com/docs/auth)
    - Verification: [Email](https://firebase.blog/posts/2017/02/email-verification-in-firebase-auth)
-4. Data Storage: [Firestore](https://firebase.google.com/docs/firestore)
-5. Layout Purposes Helper: [SnapKit](https://github.com/SnapKit/SnapKit)
-6. Custom Tab Bar Dependencies:
+3. Data Storage: [Firestore](https://firebase.google.com/docs/firestore)
+4. Layout Purposes Helper: [SnapKit](https://github.com/SnapKit/SnapKit)
+5. Custom Tab Bar Dependencies:
    - [RxGesture](https://github.com/RxSwiftCommunity/RxGesture) for handling tapping on Tab Bar items
    - [RxSwift](https://github.com/ReactiveX/RxSwift) for informing the TabBarController that item has been tapped
-7. Custom View Forms: [UIBezierPath](https://developer.apple.com/documentation/uikit/uibezierpath)
-8. Library for displaying messages to the user about the status of settings: [Toast-Swift](https://github.com/scalessec/Toast-Swift)
+6. Custom View Forms: [UIBezierPath](https://developer.apple.com/documentation/uikit/uibezierpath)
+7. Library for displaying messages to the user about the status of settings: [Toast-Swift](https://github.com/scalessec/Toast-Swift)
+8. Collection building with UICollectionViewCompositionalLayout
 
 ## Start App <br>
 
