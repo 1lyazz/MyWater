@@ -10,13 +10,9 @@ final class VideoCollection: UIView {
     // MARK: - UI Elements
 
     private lazy var videoCollection: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 25, bottom: 0, right: 25)
-
+        let layout = createLayout()
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.backgroundColor = .clear
-        collection.addShadow()
         collection.showsHorizontalScrollIndicator = false
 
         collection.dataSource = self
@@ -41,11 +37,28 @@ final class VideoCollection: UIView {
         super.init(frame: .zero)
         setupView()
         setupViewConstraints()
+        setupShadow()
     }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Layout Creation
+
+    private func createLayout() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(300), heightDimension: .absolute(180))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(300), heightDimension: .absolute(180))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 25, bottom: 0, trailing: 25)
+        section.orthogonalScrollingBehavior = .continuous
+
+        return UICollectionViewCompositionalLayout(section: section)
     }
 }
 
@@ -53,7 +66,7 @@ final class VideoCollection: UIView {
 
 private extension VideoCollection {
     private func setupView() {
-        [videoCollection].forEach(addSubview)
+        addSubview(videoCollection)
     }
 
     private func setupViewConstraints() {
@@ -61,23 +74,37 @@ private extension VideoCollection {
             make.edges.equalToSuperview()
         }
     }
+
+    private func setupShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowRadius = 4
+        layer.masksToBounds = false
+    }
 }
 
-// MARK: - UICollectionView
+// MARK: - UICollectionViewDataSource
 
-extension VideoCollection: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension VideoCollection: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return videoData.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = videoCollection.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as! VideoCell
+        guard let cell = videoCollection.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as? VideoCell else {
+            return UICollectionViewCell()
+        }
         let data = videoData[indexPath.item]
         cell.configure(with: data.url, previewImg: data.previewImg)
         return cell
     }
+}
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 180)
+// MARK: - UICollectionViewDelegate
+
+extension VideoCollection: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selected item at \(indexPath.row)")
     }
 }
