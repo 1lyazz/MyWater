@@ -7,6 +7,7 @@ import UIKit
 import WebKit
 
 final class VideoCell: UICollectionViewCell {
+    
     private var playButton: UIButton = {
         let button = UIButton()
         button.setImage(.playButton, for: .normal)

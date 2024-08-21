@@ -181,7 +181,7 @@
 		0A22CE932C52E28C0060FAA8 /* VideoCollection */ = {
 			isa = PBXGroup;
 			children = (
-				0ABF27AC2C414C9900309982 /* Cells */,
+				0A52BED22C41620200874CAC /* VideoCell.swift */,
 				0A22CE912C52DEA90060FAA8 /* VideoCollection.swift */,
 			);
 			path = VideoCollection;
@@ -273,14 +273,6 @@
 				0A7F7B622C56A8870043B205 /* MyWaterFirestore.swift */,
 			);
 			path = MyWater;
-			sourceTree = "<group>";
-		};
-		0ABF27AC2C414C9900309982 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				0A52BED22C41620200874CAC /* VideoCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		0AE42FCA2C401CF90070CC14 /* Authorisation */ = {
