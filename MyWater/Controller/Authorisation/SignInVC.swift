@@ -42,7 +42,7 @@ final class SignInVC: UIViewController {
 
 private extension SignInVC {
     private func setupStyle() {
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = #colorLiteral(red: 0.3921568627, green: 0.8235294118, blue: 1, alpha: 1)
         view.tintColor = .white
     }
 
