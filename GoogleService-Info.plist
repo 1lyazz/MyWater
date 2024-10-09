@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDYNOx18Rkhx3WYD0fkTqXwNpmo2BmEHF0</string>
+	<string>AIzaSyBg0DSIenlVvxjbaV367z9pQskg547r3cU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>505292457526</string>
+	<string>1059221784436</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>gmail-zablotski.MyWater</string>
+	<string>gmail-zablotski</string>
 	<key>PROJECT_ID</key>
-	<string>my-water-a7446</string>
+	<string>my-water-fd217</string>
 	<key>STORAGE_BUCKET</key>
-	<string>my-water-a7446.appspot.com</string>
+	<string>my-water-fd217.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:505292457526:ios:008ed14545263392963a97</string>
+	<string>1:1059221784436:ios:6c727330caaea51f780e21</string>
 </dict>
 </plist>
