@@ -57,7 +57,7 @@ final class VideoCell: UICollectionViewCell {
         }
     }
 
-    // MARK: Bindings
+    // MARK: - Bindings
 
     private func bind() {
         playButton.addAction(UIAction(handler: { [weak self] _ in

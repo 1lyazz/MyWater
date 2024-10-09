@@ -38,7 +38,7 @@ final class ForgotPassVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension ForgotPassVC {
     private func setupStyle() {
@@ -60,7 +60,7 @@ private extension ForgotPassVC {
         }
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         backButton.addAction(UIAction(handler: { [weak self] _ in
@@ -76,7 +76,7 @@ private extension ForgotPassVC {
         }), for: .touchUpInside)
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     // Varificatiom email and reset user password
     private func resetPassword() {

@@ -20,7 +20,7 @@ final class CustomTabBar: UIStackView {
     private let itemTappedSubject = PublishSubject<Int>()
     private let disposeBag = DisposeBag()
     
-    // MARK: Init
+    // MARK: - Init
     
     init() {
         super.init(frame: .zero)
@@ -39,13 +39,13 @@ final class CustomTabBar: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Setup View
+    // MARK: - Setup View
     
     private func setupView() {
         addArrangedSubviews([calendarItem, myWaterItem, settingsItem])
     }
     
-    // MARK: Setup Properties
+    // MARK: - Setup Properties
     
     private func setupProperties() {
         distribution = .fillEqually
@@ -61,7 +61,7 @@ final class CustomTabBar: UIStackView {
         }
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         calendarItem.rx.tapGesture()
@@ -98,7 +98,7 @@ final class CustomTabBar: UIStackView {
             .disposed(by: disposeBag)
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     private func selectItem(index: Int) {
         customItemViews.forEach { $0.isSelected = $0.index == index }

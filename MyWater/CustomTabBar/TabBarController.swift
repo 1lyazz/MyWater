@@ -32,13 +32,13 @@ final class TabBarController: UITabBarController {
         navigationController?.isNavigationBarHidden = true
     }
     
-    // MARK: Setup View
+    // MARK: - Setup View
     
     private func setupView() {
         view.addSubview(customTabBar)
     }
     
-    // MARK: Constraints
+    // MARK: - Constraints
     
     private func makeConstraints() {
         customTabBar.snp.makeConstraints { make in
@@ -47,7 +47,7 @@ final class TabBarController: UITabBarController {
         }
     }
     
-    // MARK: Setup Properties
+    // MARK: - Setup Properties
     
     private func setupProperties() {
         tabBar.isHidden = true
@@ -57,7 +57,7 @@ final class TabBarController: UITabBarController {
         setupTabBarAppearance()
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         customTabBar.itemTapped
@@ -65,7 +65,7 @@ final class TabBarController: UITabBarController {
             .disposed(by: disposeBag)
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     private func selectTabWith(index: Int) {
         selectedIndex = index
