@@ -28,6 +28,7 @@
 		0A5C8AAB2C40307C00CE5CDB /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAA2C40307C00CE5CDB /* CustomTabItem.swift */; };
 		0A5C8AAD2C40309D00CE5CDB /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAC2C40309D00CE5CDB /* CustomTabBar.swift */; };
 		0A5C8AAF2C4030B500CE5CDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C8AAE2C4030B500CE5CDB /* Extensions.swift */; };
+		0A5D26972CB6A45A00B1EE91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A5D26962CB6A45A00B1EE91 /* GoogleService-Info.plist */; };
 		0A7C7C852C46B2ED00534556 /* DropProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C7C842C46B2ED00534556 /* DropProgressView.swift */; };
 		0A7C7C872C46E05800534556 /* WaterBarShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C7C862C46E05800534556 /* WaterBarShapeView.swift */; };
 		0A7F7B562C568BAB0043B205 /* MyWaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7F7B552C568BAB0043B205 /* MyWaterView.swift */; };
@@ -62,7 +63,6 @@
 		0AE66E852C3D59B100F2A954 /* UIVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */; };
 		0AE88B192C4280AC0070DF5D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */; };
 		0AE88B1E2C42CF580070DF5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B1D2C42CF580070DF5D /* Constants.swift */; };
-		0AF960B72C653A7200404716 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF960B62C653A7200404716 /* GoogleService-Info.plist */; };
 		0AFE9AB32C3C143700AC24E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB22C3C143700AC24E6 /* FirebaseAuth */; };
 		0AFE9AB52C3C143700AC24E6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB42C3C143700AC24E6 /* FirebaseFirestore */; };
 		0AFE9ABB2C3C1BB700AC24E6 /* GlassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */; };
@@ -105,6 +105,7 @@
 		0A5C8AAA2C40307C00CE5CDB /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		0A5C8AAC2C40309D00CE5CDB /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		0A5C8AAE2C4030B500CE5CDB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0A5D26962CB6A45A00B1EE91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A7C7C842C46B2ED00534556 /* DropProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropProgressView.swift; sourceTree = "<group>"; };
 		0A7C7C862C46E05800534556 /* WaterBarShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBarShapeView.swift; sourceTree = "<group>"; };
 		0A7F7B552C568BAB0043B205 /* MyWaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaterView.swift; sourceTree = "<group>"; };
@@ -140,7 +141,6 @@
 		0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExtension.swift; sourceTree = "<group>"; };
 		0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0AE88B1D2C42CF580070DF5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0AF960B62C653A7200404716 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassManager.swift; sourceTree = "<group>"; };
 		0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveImageView.swift; sourceTree = "<group>"; };
 		0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		0A22CE932C52E28C0060FAA8 /* VideoCollection */ = {
 			isa = PBXGroup;
 			children = (
-				0ABF27AC2C414C9900309982 /* Cells */,
+				0A52BED22C41620200874CAC /* VideoCell.swift */,
 				0A22CE912C52DEA90060FAA8 /* VideoCollection.swift */,
 			);
 			path = VideoCollection;
@@ -224,8 +224,8 @@
 			children = (
 				0ACBF81E2C5AA54700CB9B01 /* README.md */,
 				0A3E5E732C3C0AF9004E5BBA /* MyWater */,
-				0AF960B62C653A7200404716 /* GoogleService-Info.plist */,
 				0AE4AC952C43E6C200FA9C10 /* Frameworks */,
+				0A5D26962CB6A45A00B1EE91 /* GoogleService-Info.plist */,
 				0A3E5E722C3C0AF9004E5BBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -273,14 +273,6 @@
 				0A7F7B622C56A8870043B205 /* MyWaterFirestore.swift */,
 			);
 			path = MyWater;
-			sourceTree = "<group>";
-		};
-		0ABF27AC2C414C9900309982 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				0A52BED22C41620200874CAC /* VideoCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		0AE42FCA2C401CF90070CC14 /* Authorisation */ = {
@@ -500,7 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3E5E7E2C3C0AFB004E5BBA /* Assets.xcassets in Resources */,
-				0AF960B72C653A7200404716 /* GoogleService-Info.plist in Resources */,
+				0A5D26972CB6A45A00B1EE91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski.MyWater";
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -748,7 +740,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski.MyWater";
+				PRODUCT_BUNDLE_IDENTIFIER = "gmail-zablotski";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

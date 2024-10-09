@@ -42,7 +42,7 @@ final class SignUpVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension SignUpVC {
     private func setupStyle() {
@@ -50,13 +50,13 @@ private extension SignUpVC {
         view.tintColor = .white
     }
     
-    // MARK: Setup View
+    // MARK: - Setup View
     
     private func setupView() {
         view.addSubview(signUpView)
     }
     
-    // MARK: Constraints
+    // MARK: - Constraints
     
     private func makeConstraints() {
         signUpView.snp.makeConstraints { make in
@@ -64,7 +64,7 @@ private extension SignUpVC {
         }
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         backButton.addAction(UIAction(handler: { [weak self] _ in

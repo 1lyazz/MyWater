@@ -31,7 +31,7 @@ final class SettingsVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension SettingsVC {
     private func setupStyle() {

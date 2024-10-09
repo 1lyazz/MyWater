@@ -50,7 +50,7 @@ class MyWaterVC: UIViewController {
         loadMainData(currentDateString)
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     // Swipe handler
     @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
@@ -81,7 +81,7 @@ class MyWaterVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension MyWaterVC {
     private func setupView() {
@@ -99,7 +99,7 @@ private extension MyWaterVC {
         }
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         myWaterView.waterBar.glassStepper.addAction(UIAction(handler: { [weak self] _ in

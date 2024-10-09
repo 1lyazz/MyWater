@@ -38,21 +38,21 @@ final class SignInVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension SignInVC {
     private func setupStyle() {
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = #colorLiteral(red: 0.3921568627, green: 0.8235294118, blue: 1, alpha: 1)
         view.tintColor = .white
     }
 
-    // MARK: Setup View
+    // MARK: - Setup View
     
     private func setupView() {
         [signInView].forEach(view.addSubview)
     }
     
-    // MARK: Constraints
+    // MARK: - Constraints
     
     private func makeConstraints() {
         signInView.snp.makeConstraints { make in
@@ -60,7 +60,7 @@ private extension SignInVC {
         }
     }
     
-    // MARK: Bindings
+    // MARK: - Bindings
     
     private func bind() {
         signUpButton.addAction(UIAction(handler: { [weak self] _ in

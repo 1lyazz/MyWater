@@ -7,6 +7,7 @@ import UIKit
 import WebKit
 
 final class VideoCell: UICollectionViewCell {
+    
     private var playButton: UIButton = {
         let button = UIButton()
         button.setImage(.playButton, for: .normal)
@@ -56,7 +57,7 @@ final class VideoCell: UICollectionViewCell {
         }
     }
 
-    // MARK: Bindings
+    // MARK: - Bindings
 
     private func bind() {
         playButton.addAction(UIAction(handler: { [weak self] _ in

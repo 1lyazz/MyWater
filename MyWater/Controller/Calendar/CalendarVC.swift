@@ -30,7 +30,7 @@ final class CalendarVC: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: - Private Methods
 
 private extension CalendarVC {
     private func setupView() {

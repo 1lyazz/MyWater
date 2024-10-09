@@ -21,7 +21,7 @@ final class CustomItemView: UIView {
     
     private let item: CustomTabItem
     
-    // MARK: Init
+    // MARK: - Init
     
     init(with item: CustomTabItem, index: Int) {
         self.item = item
@@ -39,14 +39,14 @@ final class CustomItemView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Setup View
+    // MARK: - Setup View
     
     private func setupView() {
         addSubview(containerView)
         containerView.addSubviews(nameLabel, iconImageView, underlineView)
     }
     
-    // MARK: Constraints
+    // MARK: - Constraints
     
     private func makeConstraints() {
         containerView.snp.makeConstraints { make in
@@ -74,7 +74,7 @@ final class CustomItemView: UIView {
         }
     }
     
-    // MARK: Setup Properties
+    // MARK: - Setup Properties
     
     private func setupProperties() {
         nameLabel.configureWith(item.name,
@@ -88,7 +88,7 @@ final class CustomItemView: UIView {
         iconImageView.image = isSelected ? item.selectedIcon : item.icon
     }
     
-    // MARK: Methods
+    // MARK: - Methods
     
     private func animateItems() {
         UIView.animate(withDuration: 0.4) { [unowned self] in
