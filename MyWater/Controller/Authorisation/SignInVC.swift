@@ -28,6 +28,9 @@ final class SignInVC: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
+        // Ups and down view with keyboard (Method from UIVC extension)
+        startObservingKeyboard(offset: 200)
+        
         // Hiding the keyboard by tapping the screen
         setupGestureRecognizers()
     }

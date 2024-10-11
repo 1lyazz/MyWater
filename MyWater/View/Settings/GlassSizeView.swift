@@ -76,7 +76,12 @@ extension GlassSizeView: UIPickerViewDataSource, UIPickerViewDelegate {
         return glassManager.glassSizes.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return glassManager.glassSizes[row] + "ml"
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let title = glassManager.glassSizes[row] + "ml"
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white
+        ]
+        
+        return NSAttributedString(string: title, attributes: attributes)
     }
 }

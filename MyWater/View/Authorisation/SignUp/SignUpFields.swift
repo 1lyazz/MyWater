@@ -12,6 +12,9 @@ final class SignUpFields: UIView {
     let emailTextField: WaterTextField = {
         let textField = WaterTextField()
         textField.keyboardType = .emailAddress
+        textField.textContentType = .oneTimeCode
+        textField.autocorrectionType = .no
+        textField.smartInsertDeleteType = .no
         textField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
         return textField
     }()

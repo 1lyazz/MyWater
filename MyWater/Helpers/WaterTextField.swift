@@ -61,6 +61,8 @@ final class WaterTextField: UITextField {
         let clearButton = UIButton()
         clearButton.setImage(UIImage(systemName: "multiply.circle.fill"), for: .normal)
         clearButton.tintColor = .secondaryLabel
+        clearButton.tintColor = .white
+        clearButton.alpha = 0.7
         clearButton.addAction(UIAction(handler: { [weak self] _ in
             clearButton.animateClick {
                 self?.text = ""
@@ -79,6 +81,8 @@ final class WaterTextField: UITextField {
         let eyeButton = UIButton()
         eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
         eyeButton.tintColor = .secondaryLabel
+        eyeButton.tintColor = .white
+        eyeButton.alpha = 0.7
         eyeButton.addAction(UIAction(handler: { [weak self] _ in
             eyeButton.animateClick {
                 self?.isSecureTextEntry.toggle()

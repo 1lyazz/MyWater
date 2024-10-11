@@ -26,14 +26,14 @@ final class ForgotPassVC: UIViewController {
         emailTextField.delegate = self
         
         // Ups and down view with keyboard (Method from UIVC extension)
-        startObservingKeyboard()
+        startObservingKeyboard(offset: 40)
         
         // Hiding the keyboard by tapping the screen
         setupGestureRecognizers()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         forgotPassView.background.startWaveAnimation()
     }
 }

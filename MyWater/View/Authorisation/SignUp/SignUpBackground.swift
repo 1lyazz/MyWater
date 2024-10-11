@@ -29,11 +29,13 @@ final class SignUpBackground: UIView {
 
     // Wave animation
     func startWaveAnimation() {
-        UIView.animate(withDuration: 3, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.firstWave.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-            self.secondWave.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            self.thirdWave.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        }, completion: nil)
+        let animateWaves = [
+            AnimationLayer(layer: firstWave.layer, scaleX: 0.95, scaleY: 0.95),
+            AnimationLayer(layer: secondWave.layer, scaleX: 1.1, scaleY: 1.1),
+            AnimationLayer(layer: thirdWave.layer, scaleX: 1.2, scaleY: 1.2)
+        ]
+
+        WaveAnimator.animateWaves(layers: animateWaves, duration: 3)
     }
 }
 

@@ -30,14 +30,14 @@ final class SignUpVC: UIViewController {
         confirmPasswordField.delegate = self
         
         // Ups and down view with keyboard (Method from UIVC extension)
-        startObservingKeyboard()
+        startObservingKeyboard(offset: 80)
         
         // Hiding the keyboard by tapping the screen
         setupGestureRecognizers()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         signUpView.background.startWaveAnimation()
     }
 }
@@ -114,7 +114,6 @@ extension SignUpVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case emailTextField:
-            textField.resignFirstResponder()
             passwordTextField.becomeFirstResponder()
         case passwordTextField:
             confirmPasswordField.becomeFirstResponder()

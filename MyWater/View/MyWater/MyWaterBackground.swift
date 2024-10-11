@@ -44,16 +44,18 @@ final class MyWaterBackground: UIView {
 
     // Wave animation
     func startWaveAnimation() {
-        UIView.animate(withDuration: 3, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.topFirstWave.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            self.topSecondWave.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            self.topThirdWave.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        let animateWaves = [
+            AnimationLayer(layer: topFirstWave.layer, scaleX: 0.9, scaleY: 0.9),
+            AnimationLayer(layer: topSecondWave.layer, scaleX: 1.1, scaleY: 1.1),
+            AnimationLayer(layer: topThirdWave.layer, scaleX: 0.9, scaleY: 0.9),
 
-            self.firstWave.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-            self.secondWave.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            self.thirdWave.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            self.fourthWave.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        }, completion: nil)
+            AnimationLayer(layer: firstWave.layer, scaleX: 0.95, scaleY: 0.95),
+            AnimationLayer(layer: secondWave.layer, scaleX: 1.1, scaleY: 1.1),
+            AnimationLayer(layer: thirdWave.layer, scaleX: 1.1, scaleY: 1.1),
+            AnimationLayer(layer: fourthWave.layer, scaleX: 1.2, scaleY: 1.2)
+        ]
+
+        WaveAnimator.animateWaves(layers: animateWaves, duration: 3)
     }
 }
 
