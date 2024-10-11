@@ -28,11 +28,13 @@ final class SettingsWavesView: UIView {
 
     // Wave animation
     func startWaveAnimation() {
-        UIView.animate(withDuration: 3, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.topFirstWave.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            self.topSecondWave.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-            self.topThirdWave.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-        }, completion: nil)
+        let animateWaves = [
+            AnimationLayer(layer: topFirstWave.layer, scaleX: 0.9, scaleY: 0.9),
+            AnimationLayer(layer: topSecondWave.layer, scaleX: 1.1, scaleY: 1.1),
+            AnimationLayer(layer: topThirdWave.layer, scaleX: 0.9, scaleY: 0.9)
+        ]
+
+        WaveAnimator.animateWaves(layers: animateWaves, duration: 3)
     }
 }
 

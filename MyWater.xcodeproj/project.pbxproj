@@ -63,6 +63,7 @@
 		0AE66E852C3D59B100F2A954 /* UIVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */; };
 		0AE88B192C4280AC0070DF5D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */; };
 		0AE88B1E2C42CF580070DF5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE88B1D2C42CF580070DF5D /* Constants.swift */; };
+		0AF9F0772CB93984001E60D7 /* WaveAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9F0762CB93984001E60D7 /* WaveAnimator.swift */; };
 		0AFE9AB32C3C143700AC24E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB22C3C143700AC24E6 /* FirebaseAuth */; };
 		0AFE9AB52C3C143700AC24E6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0AFE9AB42C3C143700AC24E6 /* FirebaseFirestore */; };
 		0AFE9ABB2C3C1BB700AC24E6 /* GlassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */; };
@@ -141,6 +142,7 @@
 		0AE66E842C3D59B100F2A954 /* UIVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCExtension.swift; sourceTree = "<group>"; };
 		0AE88B182C4280AC0070DF5D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0AE88B1D2C42CF580070DF5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AF9F0762CB93984001E60D7 /* WaveAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimator.swift; sourceTree = "<group>"; };
 		0AFE9ABA2C3C1BB700AC24E6 /* GlassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassManager.swift; sourceTree = "<group>"; };
 		0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveImageView.swift; sourceTree = "<group>"; };
 		0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 				0A22CEA22C5307DA0060FAA8 /* Calendar */,
 				0A22CEA32C5307EF0060FAA8 /* MyWater */,
 				0A22CE822C529AFA0060FAA8 /* Settings */,
+				0AF9F0762CB93984001E60D7 /* WaveAnimator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				0AFE9AC82C3C43B300AC24E6 /* ConstraintsHelper.swift in Sources */,
 				0A3E5E792C3C0AF9004E5BBA /* SignInVC.swift in Sources */,
 				0AE88B1E2C42CF580070DF5D /* Constants.swift in Sources */,
+				0AF9F0772CB93984001E60D7 /* WaveAnimator.swift in Sources */,
 				0AE5FAD62C57DB3F009BE94C /* SignUpView.swift in Sources */,
 				0AABD0752C3E8F5F0094E4B8 /* MyWaterVC.swift in Sources */,
 				0AE5FAC02C579580009BE94C /* CalendarView.swift in Sources */,
