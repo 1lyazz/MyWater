@@ -15,6 +15,7 @@ final class ResetFields: UIView {
         textField.keyboardType = .emailAddress
         textField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
         textField.backgroundColor = #colorLiteral(red: 0.6805114746, green: 0.5969915986, blue: 0.9616741538, alpha: 1)
+        textField.tintColor = #colorLiteral(red: 0.721660912, green: 0.6862715483, blue: 0.9569675326, alpha: 1)
         return textField
     }()
 

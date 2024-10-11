@@ -36,6 +36,8 @@ final class DailyGoalView: UIView {
     let goalStepper: UIStepper = {
         let stepper = UIStepper()
         stepper.tintColor = .white
+        stepper.setDecrementImage(stepper.decrementImage(for: .normal)?.withTintColor(.white), for: .normal)
+        stepper.setIncrementImage(stepper.incrementImage(for: .normal)?.withTintColor(.white), for: .normal)
         stepper.addShadow()
         return stepper
     }()
