@@ -20,11 +20,11 @@ extension UIViewController {
     }
 
     // Starts monitoring the appearance and hiding of the keyboard. Ups and down view with keyboard
-    func startObservingKeyboard() {
+    func startObservingKeyboard(offset: Int) {
         NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { [weak self] notification in
             guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
             if self?.view.frame.origin.y == 0 {
-                self?.view.frame.origin.y -= keyboardSize.height
+                self?.view.frame.origin.y -= keyboardSize.height - CGFloat(offset)
             }
         }
 
@@ -51,6 +51,4 @@ extension UIViewController {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
     }
-    
-    
 }
