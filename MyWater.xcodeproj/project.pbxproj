@@ -311,6 +311,7 @@
 				0AE5FAC92C57B913009BE94C /* SignIn */,
 				0AE5FAD02C57D36B009BE94C /* SignUp */,
 				0AE5FAD72C57E38C009BE94C /* ForgotPass */,
+				0AE66E752C3D0A1C00F2A954 /* WaterTextField.swift */,
 			);
 			path = Authorisation;
 			sourceTree = "<group>";
@@ -410,9 +411,8 @@
 			children = (
 				0AE88B1A2C42CEF90070DF5D /* Constants */,
 				0AE66E772C3D302800F2A954 /* Extentions */,
-				0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */,
 				0AFE9AC42C3C432C00AC24E6 /* WaveImageView.swift */,
-				0AE66E752C3D0A1C00F2A954 /* WaterTextField.swift */,
+				0AFE9AC72C3C43B300AC24E6 /* ConstraintsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";

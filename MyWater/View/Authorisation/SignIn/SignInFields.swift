@@ -9,23 +9,8 @@ final class SignInFields: UIView {
     
     // MARK: - UI Elements
 
-    let emailTextField: WaterTextField = {
-        let textField = WaterTextField()
-        textField.keyboardType = .emailAddress
-        textField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
-        textField.alpha = 0
-        return textField
-    }()
-
-    let passwordTextField: WaterTextField = {
-        let textField = WaterTextField()
-        textField.keyboardType = .default
-        textField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
-        textField.isSecureTextEntry = true
-        textField.showEyeButton()
-        textField.alpha = 0
-        return textField
-    }()
+    let emailTextField = WaterTextField(type: .email)
+    let passwordTextField = WaterTextField(type: .password)
 
     let warningLabel: UILabel = {
         let label = UILabel()

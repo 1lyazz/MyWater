@@ -11,10 +11,20 @@ final class SignInVC: UIViewController {
     private let signInView = SignInView()
     private lazy var warningLabel = signInView.entryFields.warningLabel
     private lazy var signInButton = signInView.entryFields.signInButton
-    private lazy var emailTextField = signInView.entryFields.emailTextField
-    private lazy var passwordTextField = signInView.entryFields.passwordTextField
     private lazy var signUpButton = signInView.signUpButton
     private lazy var forgotPassButton = signInView.forgotPassButton
+    
+    private lazy var emailTextField: WaterTextField = {
+        let textField = signInView.entryFields.emailTextField
+        textField.alpha = 0
+        return textField
+    }()
+    
+    private lazy var passwordTextField: WaterTextField = {
+        let textField = signInView.entryFields.passwordTextField
+        textField.alpha = 0
+        return textField
+    }()
     
     // MARK: - Lifecycle
     
@@ -142,6 +152,22 @@ private extension SignInVC {
 // MARK: - UITextFieldDelegate
 
 extension SignInVC: UITextFieldDelegate {
+    // Limits max number of characters that can be entered
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength: Int
+            
+        switch textField {
+        case passwordTextField:
+            maxLength = 25
+        default:
+            maxLength = 30
+        }
+        
+        let currentString: NSString = textField.text as NSString? ?? ""
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+    }
+    
     // Actions after pressing return button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
